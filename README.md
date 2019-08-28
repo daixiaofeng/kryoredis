@@ -1,0 +1,2 @@
+# kryoredis
+kryoSerialize  Redis 
