@@ -35,7 +35,14 @@ class RedisTest {
         User user0 = redisUtils.getObject("user:0");
         log.info("用户0：{}", user0);
     }
+    @Test
+    public void test2() {
+        User user = new User("小白", 18, 0, "大明湖畔200号");
+        redisUtils.setObject("user:0", user);
 
+        User user0 = redisUtils.getObject("user:0");
+        log.info("用户0：{}", user0);
+    }
     @Data
     @AllArgsConstructor
     public class User {
